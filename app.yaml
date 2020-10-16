@@ -1,0 +1,14 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+static_files: www/index.html
+upload: www/index.html
+
+- url: /(.*)
+static_files: www/\1
+upload: www/(.*)
+
+From <https://towardsdatascience.com/building-deploying-an-image-classification-web-app-with-automl-vision-tensorflow-js-app-engine-08-3157958a3289> 
